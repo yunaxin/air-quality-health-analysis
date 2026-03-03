@@ -1,3 +1,4 @@
+# Initial Proposal
 ## Project Overview
 Our main area of interest for this project is to find a way to demonstrate the use of statistics and data analytics within the health/environment domains as they impact the lives of many people. After considering various areas that we can explore for this project, we have decided to focus on health problems that might arise due to issues in air quality, with the goal of identifying statistical relationships between air quality indicators and health outcomes. 
 ## Data Used for Project

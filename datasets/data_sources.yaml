@@ -1,0 +1,22 @@
+# YAML file with dataset links
+
+EPA:
+  - year: 2018
+    url: https://aqs.epa.gov/aqsweb/airdata/annual_aqi_by_county_2018.zip
+  - year: 2019
+    url: https://aqs.epa.gov/aqsweb/airdata/annual_aqi_by_county_2019.zip
+  - year: 2020
+    url: https://aqs.epa.gov/aqsweb/airdata/annual_aqi_by_county_2020.zip
+  - year: 2021
+    url: https://aqs.epa.gov/aqsweb/airdata/annual_aqi_by_county_2021.zip
+  - year: 2022
+    url: https://aqs.epa.gov/aqsweb/airdata/annual_aqi_by_county_2022.zip
+  - year: 2023
+    url: https://aqs.epa.gov/aqsweb/airdata/annual_aqi_by_county_2023.zip
+  - year: 2024
+    url: https://aqs.epa.gov/aqsweb/airdata/annual_aqi_by_county_2024.zip
+
+CDC:
+  - name: respiratory_diseases
+    code: J00-J98 (Diseases of the respiratory system)
+    url: https://drive.google.com/uc?export=download&id=1ihBSEXiXjEceUby9jt8N1VKLVmP6d2w1
