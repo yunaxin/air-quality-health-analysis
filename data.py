@@ -74,7 +74,9 @@ def create_dataset(config: dict):
     cdc_df = pd.concat([pd.read_csv(f"./datasets/cdc_{item['name']}.csv").assign(Cause=item['name']) for item in config['CDC']],ignore_index=True)
     # get country/state from cdc and other cleaning
     cdc_df = cdc_df.dropna(subset=["County", "Year"])
-    cdc_df["Year"] = cdc_df["Year"].astype(int)
+    # handle missing population data
+    cdc_df["Population"] = pd.to_numeric(cdc_df["Population"], errors="coerce").astype("Int64")
+    cdc_df["Crude Rate"] = pd.to_numeric(cdc_df["Crude Rate"], errors="coerce")
     cdc_df[["county_raw", "state_abbr"]] = (
         cdc_df["County"]
         .str.split(",", expand=True)
@@ -98,7 +100,11 @@ def create_dataset(config: dict):
         "county_raw",
         "state_abbr",
         "Notes",
-        "Year Code"
+        "Year Code",
+        "County Code",
+        'Crude Rate Lower 95% Confidence Interval',
+        'Crude Rate Upper 95% Confidence Interval',
+        'Crude Rate Lower 95% Confidence Interval'
     ]
 
     processed_df = processed_df.drop(
