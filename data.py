@@ -101,7 +101,7 @@ def create_dataset(config: dict):
         "state_abbr",
         "Notes",
         "Year Code",
-        "County Code",
+        "County Code", 
         'Crude Rate Lower 95% Confidence Interval',
         'Crude Rate Upper 95% Confidence Interval',
         'Crude Rate Lower 95% Confidence Interval'
