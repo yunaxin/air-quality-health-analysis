@@ -17,7 +17,7 @@ def criterion(formula, df):
     float: The BIC value of the fitted model.
     """
     model = smf.ols(formula, data=df).fit()
-    criterion_value = model.aic
+    criterion_value = model.bic
     return criterion_value
 
 def remove(df, selected_columns, criterion, response='y'):
