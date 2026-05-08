@@ -1,6 +1,6 @@
 # Air Quality and Respiratory Health Analysis
 
-This project was developed as part of MATH 189 (Exploratory Data Analysis and Inference) at UC San Diego. It analyzes the relationship between air quality indicators and respiratory health outcomes across U.S. counties using statistical modeling and exploratory data analysis.
+This project was developed as part of MATH 189 (Exploratory Data Analysis and Inference) at UC San Diego during Winter 2026. It analyzes the relationship between air quality indicators and respiratory health outcomes across U.S. counties using statistical modeling and exploratory data analysis.
 
 ## Project Goals
 - Investigate relationships between pollution indicators and respiratory health outcomes
